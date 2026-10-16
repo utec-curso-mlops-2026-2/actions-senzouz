@@ -17,7 +17,7 @@ jobs:
             - name: Descargar datos
               run: python src/0-download-data.py
             - name: Separar train y test
-              run: python src/1-split-data.py
+              run: python src/1-split-dataset.py
             - name: Preprocesar train
               run: python src/2-preprocess-dataset-train.py
             - name: Preparar test
