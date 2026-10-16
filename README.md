@@ -39,3 +39,7 @@ La primera vez descarga los datos (~24 MB) desde S3; luego tarda alrededor de 1 
 Todo cambio a `main` o `develop` entra mediante **Pull Request** con al menos **1 aprobación**.
 
 Laboratorio de la Sesión 3: ver [`MISIONES.md`](MISIONES.md).
+
+Equipo:
+- Fabricio Mondragon
+- Renzo Ravelli
