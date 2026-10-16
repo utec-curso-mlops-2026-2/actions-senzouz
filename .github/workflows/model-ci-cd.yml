@@ -10,6 +10,7 @@ jobs:
               uses: actions/setup-python@v6
               with:
                   python-version: '3.12'
+                  cache: 'pip'
             - name: 'Instalar dependencias'
               run: |
                   python -m pip install --upgrade pip
@@ -34,3 +35,9 @@ jobs:
       steps:
         - name: Desplegar modelo
           run: echo "Desplegando el modelo de riesgo en AWS... (simulado)"
+    notificar:
+      needs: [model-ci, model-cd]
+      runs-on: ubuntu-latest
+      steps:
+        - name: Notificar resultados
+          run: echo "¡Pipeline completo!"
